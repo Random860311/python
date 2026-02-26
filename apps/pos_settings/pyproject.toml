@@ -3,6 +3,21 @@ name = "pos-settings"
 version = "0.1.0"
 requires-python = ">=3.10"
 dependencies = [
-  "core",
-  "core-imp"
+  "core @ file:../../libs/core",
+  "core-imp @ file:../../libs/core_imp",
+
+  # Data validation and typed models
+  "pydantic>=2.12",
+
+  # Structured settings loading (TOML, env vars, etc.)
+  "pydantic-settings>=2.13.1",
+
+  # Qt-based desktop UI framework (commercial-safe, LGPL)
+  "PySide6>=6.10.2",
+
+  # Qt Designer + UI compilation tools (drag-and-drop support)
+#  "pyside6-tools>=6.6"
 ]
+
+#"core @ git+https://github.com/Random860311/python.git@main#subdirectory=libs/core",
+#  "core-imp @ git+https://github.com/Random860311/python.git@main#subdirectory=libs/core_imp"
