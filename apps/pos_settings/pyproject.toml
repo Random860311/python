@@ -5,6 +5,8 @@ requires-python = ">=3.10"
 dependencies = [
   "core @ file:../../libs/core",
   "core-imp @ file:../../libs/core_imp",
+  "settings @ file:../../libs/settings",
+  "settings-gui @ file:../../libs/settings_gui",
 
   # Data validation and typed models
   "pydantic>=2.12",
