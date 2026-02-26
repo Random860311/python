@@ -2,8 +2,8 @@ from pathlib import Path
 import subprocess
 
 BASE_DIR = Path(__file__).parent
-UI_DIR = BASE_DIR / "src" / "pos_settings" / "ui"
-OUT_DIR = BASE_DIR / "src" / "pos_settings" / "ui_generated"
+UI_DIR = BASE_DIR / "src" / "pos_settings" / "ui" / "design"
+OUT_DIR = BASE_DIR / "src" / "pos_settings" / "ui" / "generated"
 
 OUT_DIR.mkdir(exist_ok=True)
 
